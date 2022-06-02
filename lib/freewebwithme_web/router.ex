@@ -17,7 +17,7 @@ defmodule FreewebwithmeWeb.Router do
   scope "/", FreewebwithmeWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", MainLive
   end
 
   # Other scopes may use custom stacks.
